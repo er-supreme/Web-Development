@@ -1,0 +1,102 @@
+body {
+  color: white;
+  margin: 0px;
+  padding: 0px;
+  background-image: url("backgroundImage.jpg");
+  background-repeat: no-repeat;
+  font-family: 'Baloo Bhai 2', cursive; /*font selected from google fonts*/
+}
+.left {
+  position: absolute;
+  
+  display: inline-block; /* allows to set the width and height */
+  left: 60px;
+  top: 30px; /*margin*/
+  /* border: 2px solid white; */
+  
+}
+.left div{
+  text-align: center;
+  line-height: 1;
+  font-size: 19px;
+  font-weight: bold;
+}
+.left img{
+  width: 117px;
+  filter: invert(100%); /* convert color from black to white or vice-versa*/
+}
+.mid {
+  /* three condition to make it center one is display block , second is width , third is margin auto */
+  display: block;
+  width: 45%;
+  margin: 20px auto;
+  /* border: 2px solid white; */
+}
+.right {
+  position: absolute; /* position will be absolute to parent , here it is defined in header so parent will be header */
+  display: inline-block;
+  right: 34px;
+  top: 31px;
+  /* border: 2px solid white; */
+}
+.navbar {
+  display: inline-block;
+}
+.navbar li {
+  display: inline-block;
+  font-size: 20px;
+}
+.navbar li a {
+  color: white;
+  text-decoration: none;
+  padding: 12px 12px;
+}
+.navbar li a:hover,
+.navbar li a:active {
+  text-decoration: underline;
+  color: #e7e74d;
+}
+.btn {
+  margin: 0px 9px; /* top/bottom -0 px and right/left- 9 px */
+  background-color: black;
+  color: white;
+  padding: 3px 14px;
+  border: 2px solid gray;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer; /*to show the hand sign while pointing to the button*/
+  font-family: 'Baloo Bhai 2', cursive;
+}
+.btn:hover{
+  background-color: rgb(63, 62, 62);
+}
+
+.container {
+  /* border: 2px solid white; */
+  margin: 103px 190px;
+  padding: 11px 14px;
+  width: 30%;
+}
+.container h1{
+  font-size: 20px;
+  text-align: center;
+}
+.form-group input{
+  text-align: center;
+  display:block;
+  width: 319px;
+  padding: 6px;
+  margin: 3px auto;
+  border: 2px solid black;
+  border-radius: 15px;
+  font-family: 'Baloo Bhai 2', cursive;
+  font-size: 16px;
+
+}
+.form-group button {
+  display: block;
+  width:81%;
+  text-align: center;
+  margin:12px auto;
+  
+}
