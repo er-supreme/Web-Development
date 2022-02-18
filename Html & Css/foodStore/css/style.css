@@ -127,12 +127,7 @@
 
 /* client section  */
 
-#client-section{
-    /* height: 344px; */
-    /* border: 2px solid red; */
-    position: relative;
-    
-}
+
 #client-section::before{
     content: "";
     background: url('../img/section/clientBackground.jpg') no-repeat center center/cover;
