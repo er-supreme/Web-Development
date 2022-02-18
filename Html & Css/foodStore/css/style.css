@@ -1,0 +1,33 @@
+ /* css reset  */
+ *{
+    margin: 0px;
+    padding: 0px;
+ }
+
+ /* navigation bar  */
+
+ #navbar{
+     display: flex;
+ }
+
+ /* navigation bar logo and image */
+
+ #logo{
+    margin: 12px 33px;
+ }
+  
+ #logo img{
+    height: 91px;
+    margin: 9px 17px;
+    border-radius: 15px 50px 30px 5px;
+ }
+
+ /* navigation bar list styling*/
+
+ #navbar ul{
+     display: flex;
+ }
+
+ #navbar ul li{
+    list-style: none;
+}
