@@ -1,4 +1,3 @@
-
 showNotes();
 
 let addNoteBtn = document.getElementById("addNoteBtn");
@@ -9,10 +8,10 @@ addNoteBtn.addEventListener("click", function (e) {
   if (notes == null) {
     notesObj = [];
   } else {
-    notesObj = JSON.parse(notes);
+    notesObj = JSON.parse(notes); //to make it to array
   }
   notesObj.push(addTxt.value);
-  localStorage.setItem("notes", JSON.stringify(notesObj));
+  localStorage.setItem("notes", JSON.stringify(notesObj)); //to convert array into strings
   addTxt.value = "";
   //console.log(notesObj);
   showNotes();
@@ -45,38 +44,28 @@ function showNotes() {
   }
 }
 
-
-function deleteNote(index){
+function deleteNote(index) {
   let notes = localStorage.getItem("notes");
   if (notes == null) {
     notesObj = [];
   } else {
     notesObj = JSON.parse(notes);
   }
-  notesObj.splice(index,1);
+  notesObj.splice(index, 1);
   localStorage.setItem("notes", JSON.stringify(notesObj));
   showNotes();
-
 }
 
-let searchTxt=document.getElementById("searchTxt");
-searchTxt.addEventListener("input",function(){
-
-let inputVal=searchTxt.value.toLowerCase();
-let noteCards = document.getElementsByClassName('noteCard');
-Array.from(noteCards).forEach(function(element){
-
-let cardTxt=element.getElementsByTagName("p")[0].innerText;
-if(cardTxt.includes(inputVal)){
-
-  element.style.display="block";
-}
-else{
-  element.style.display="none";
-}
-
-
-})
-
-
-})
+let searchTxt = document.getElementById("searchTxt");
+searchTxt.addEventListener("input", function () {
+  let inputVal = searchTxt.value.toLowerCase();
+  let noteCards = document.getElementsByClassName("noteCard");
+  Array.from(noteCards).forEach(function (element) {
+    let cardTxt = element.getElementsByTagName("p")[0].innerText;
+    if (cardTxt.includes(inputVal)) {
+      element.style.display = "block";
+    } else {
+      element.style.display = "none";
+    }
+  });
+});
