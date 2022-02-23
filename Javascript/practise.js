@@ -1,6 +1,12 @@
 console.log('this is sachin');
-let a = window.innerWidth;
-let b = window.innerHeight;
-window.blur(a);
-console.log(document.documentElement,a.blur);
 
+setTimeout(() => {
+    
+    for (let index = 0; index < 200; index++) {
+        const element = index;
+        console.log(element);
+        
+    }
+}, 2000);
+
+console.log('done');
