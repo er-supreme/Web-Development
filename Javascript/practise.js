@@ -1,13 +1,13 @@
-console.log('this is sachin');
+console.log("this is sachin");
 
 //setTimeout practise
 
 // setTimeout(() => {
-    
+
 //     for (let index = 0; index < 200; index++) {
 //         const element = index;
 //         console.log(element);
-        
+
 //     }
 // }, 2000);
 
@@ -73,14 +73,46 @@ console.log('this is sachin');
 
 //callback
 
-function addition(x,y,callback){
-    setTimeout(() => {
-        document.write(`The sum of ${x} and ${y} is ${x+y}.`); 
-        callback();
-    }, 2000);
+// function addition(x,y,callback){
+//     setTimeout(() => {
+//         document.write(`The sum of ${x} and ${y} is ${x+y}.`);
+//         callback();
+//     }, 2000);
 
-}
-function display(){
-    document.write('number added');
-}
-addition(5,4,display);
+// }
+// function display(){
+//     document.write('number added');
+// }
+// addition(5,4,display);
+
+// fetch api
+
+// function getData (){
+
+//     url = "https://api.github.com/users";
+//     fetch(url).then(response => response.json()
+//     ).then(data => console.log(data));
+// }
+
+// function postData(){
+//     url = "http://dummy.restapiexample.com/api/v1/create";
+//     data = `{"name":"test21312","salary":"123","age":"23"}`;
+//     params = {
+//         method : 'post',
+//         headers:{
+//             'content-type': 'application/json'
+//         },
+//         body:data
+//     }
+//     fetch(url,params).then(response => response.json)
+//     .then(data => console.log(data))
+
+// }
+
+// postData();
+
+//regular expression
+
+// let reg = /sachin/;
+// console.log(reg);
+// console.log(reg.source);
